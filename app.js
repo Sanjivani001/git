@@ -5,7 +5,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.get("/",(req,res)=>{
     res.sendFile(__dirname+"/index.html");
 })
-app.get("/",function(req,res){
+app.post("/",function(req,res){
     const n1 = Number(req.body.num1);
     const n2 = Number(req.body.num2);
     const add = n1+n2;
